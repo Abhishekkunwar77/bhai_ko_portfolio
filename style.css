@@ -305,6 +305,19 @@ section {
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
+@media (max-width: 768px) {
+  .experience-containers {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 1.5rem; 
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .experience-containers {
+    grid-template-columns: 1fr 1fr; /* Two columns for tablets */
+    gap: 1.5rem;
+  }
+}
 
 .about-details-container {
   justify-content: center;
@@ -421,8 +434,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
-  margin-top:-50px;
-  margin-bottom: -90px;
+  
 }
 
 .contact-info-upper-container {
