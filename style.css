@@ -90,8 +90,12 @@ a:hover::after {
 .hamburger-menu {
   position: relative;
   display: inline-block;
-
+    position: fixed;
+    top:20px;
+    right:20px;
+    z-index:1;
 }
+
 
 .hamburger-icon {
   display: flex;
@@ -224,6 +228,7 @@ section {
   margin-top: 1rem;
   gap: 1rem;
 }
+
 
 /* ICONS */
 
@@ -478,4 +483,48 @@ footer p {
 }
 hr {
   color: #4A4A4A;
+ }
+ 
+footer a::before,
+footer a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #00ff88;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+footer a::before {
+  top: 0;
+  transform-origin: left;
+}
+
+footer a::after {
+  bottom: 0;
+  transform-origin: right;
+}
+
+footer a:hover {
+  color: green;
+}
+
+footer a:hover::before,
+footer a:hover::after {
+  transform: scaleX(1);
+} 
+.neon {
+    font-size: 50px;
+    font-weight: bold;
+    color: #010101;
+    text-shadow: 0 0 5px #010101, 0 0 5px #010101, 0 0 10px #010101;
+    animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; text-shadow: 0 0 2px #1fcf00, 0 0 4px #22e000; }
+    100% { opacity: 1; }
 }

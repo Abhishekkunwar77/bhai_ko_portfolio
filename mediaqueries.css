@@ -106,3 +106,8 @@
     text-align: justify;
   }
 }
+@media (max-width: 768px) {
+  #hamburger-nav {
+    display: block;
+  }
+}
