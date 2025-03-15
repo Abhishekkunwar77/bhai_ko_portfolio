@@ -1,4 +1,3 @@
-/* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
@@ -18,8 +17,6 @@ html {
 p {
   color: rgb(85, 85, 85);
 }
-
-/* TRANSITION */
 
 a,
 .btn {
@@ -51,18 +48,16 @@ body {
 a {
   position: relative;
   display: inline-block;
-  color: #333; /* Dark gray for readability */
+  color: #333;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.4s ease-in-out;
 }
 
-/* 🪄 Smooth Color Shift */
 a:hover {
-  color: green; /* Soft blue effect */
+  color: green; 
 }
 
-/* ✨ Magic Underline Effect */
 a::after {
   content: "";
   position: absolute;
@@ -78,10 +73,6 @@ a:hover::after {
   width: 100%;
   left: 0;
 }
-
-
-
-
 .logo {
   font-size: 2.5rem;
 }
@@ -99,6 +90,7 @@ a:hover::after {
 .hamburger-menu {
   position: relative;
   display: inline-block;
+
 }
 
 .hamburger-icon {
@@ -108,12 +100,13 @@ a:hover::after {
   height: 24px;
   width: 30px;
   cursor: pointer;
+
 }
 
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: green;
   transition: all 0.3 ease-in-out;
 }
 
@@ -307,14 +300,14 @@ section {
 }
 @media (max-width: 768px) {
   .experience-containers {
-    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-columns: 1fr; 
     gap: 1.5rem; 
   }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .experience-containers {
-    grid-template-columns: 1fr 1fr; /* Two columns for tablets */
+    grid-template-columns: 1fr 1fr; 
     gap: 1.5rem;
   }
 }
@@ -348,7 +341,11 @@ section {
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
-
+.details-container:hover{
+   transform: scale(1.05);
+  transition: transform 0.3s ease;
+  cursor:pointer;
+}
 .section-container {
   gap: 4rem;
   height: 80%;

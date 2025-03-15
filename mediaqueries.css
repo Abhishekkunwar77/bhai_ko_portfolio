@@ -23,6 +23,11 @@
   .experience-details-container {
     margin-top: 2rem;
   }
+
+  .details-container .color-container{
+     transform: scale(1.1);
+  transition: transform 0.3s ease;
+  }
   #profile,
   .section-container {
     display: block;
